@@ -1,19 +1,43 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <!-- Canelé pastry -->
-  <!-- Body with fluted ridges -->
-  <path d="M45 60 Q40 65 38 80 L35 155 Q35 175 60 180 Q80 185 100 185 Q120 185 140 180 Q165 175 165 155 L162 80 Q160 65 155 60" stroke="#000" stroke-width="1.8" fill="#000" opacity="0.18"/>
-  <!-- Fluted ridges -->
-  <path d="M45 65 Q43 80 42 100 L40 155" stroke="#000" stroke-width="1" opacity="0.3"/>
-  <path d="M60 58 Q57 78 56 100 L54 160" stroke="#000" stroke-width="1" opacity="0.3"/>
-  <path d="M78 55 Q76 75 75 100 L74 165" stroke="#000" stroke-width="1" opacity="0.3"/>
-  <path d="M100 54 Q100 74 100 100 L100 168" stroke="#000" stroke-width="1" opacity="0.3"/>
-  <path d="M122 55 Q124 75 125 100 L126 165" stroke="#000" stroke-width="1" opacity="0.3"/>
-  <path d="M140 58 Q143 78 144 100 L146 160" stroke="#000" stroke-width="1" opacity="0.3"/>
-  <path d="M155 65 Q157 80 158 100 L160 155" stroke="#000" stroke-width="1" opacity="0.3"/>
-  <!-- Crown/top -->
-  <path d="M45 60 Q50 45 70 38 Q85 33 100 32 Q115 33 130 38 Q150 45 155 60" stroke="#000" stroke-width="1.8"/>
-  <!-- Top surface -->
-  <ellipse cx="100" cy="48" rx="52" ry="14" stroke="#000" stroke-width="1" opacity="0.3"/>
-  <!-- Caramel shine -->
-  <path d="M68 70 Q72 65 80 68" stroke="#000" stroke-width="0.8" opacity="0.2"/>
+  <!-- Canelé pastry - classic fluted French pastry -->
+
+  <!-- Main body with characteristic fluted cylindrical shape -->
+  <!-- Outer silhouette -->
+  <path d="M42 55 Q38 62 36 78 L32 152 Q32 172 50 178 Q65 184 82 186 Q92 187 100 187 Q108 187 118 186 Q135 184 150 178 Q168 172 168 152 L164 78 Q162 62 158 55" stroke="#000" stroke-width="2.2" fill="#000" opacity="0.1"/>
+
+  <!-- Crown/top dome shape -->
+  <path d="M42 55 Q48 38 65 30 Q80 24 100 22 Q120 24 135 30 Q152 38 158 55" stroke="#000" stroke-width="2.2"/>
+
+  <!-- Top flat surface -->
+  <ellipse cx="100" cy="40" rx="56" ry="16" stroke="#000" stroke-width="1.2" opacity="0.25"/>
+
+  <!-- Characteristic vertical fluted ridges -->
+  <!-- Deep grooves running down the body -->
+  <path d="M42 58 Q40 72 39 95 L37 145 Q36 158 38 168" stroke="#000" stroke-width="1.2" opacity="0.4"/>
+  <path d="M54 48 Q51 66 50 90 L48 148 Q47 162 50 174" stroke="#000" stroke-width="1.2" opacity="0.4"/>
+  <path d="M68 40 Q64 60 63 88 L62 150 Q61 166 64 180" stroke="#000" stroke-width="1.2" opacity="0.35"/>
+  <path d="M84 34 Q80 56 79 88 L78 155 Q78 170 80 184" stroke="#000" stroke-width="1.2" opacity="0.35"/>
+  <path d="M100 32 Q100 54 100 88 L100 158 Q100 172 100 187" stroke="#000" stroke-width="1.2" opacity="0.35"/>
+  <path d="M116 34 Q120 56 121 88 L122 155 Q122 170 120 184" stroke="#000" stroke-width="1.2" opacity="0.35"/>
+  <path d="M132 40 Q136 60 137 88 L138 150 Q139 166 136 180" stroke="#000" stroke-width="1.2" opacity="0.35"/>
+  <path d="M146 48 Q149 66 150 90 L152 148 Q153 162 150 174" stroke="#000" stroke-width="1.2" opacity="0.4"/>
+  <path d="M158 58 Q160 72 161 95 L163 145 Q164 158 162 168" stroke="#000" stroke-width="1.2" opacity="0.4"/>
+
+  <!-- Horizontal bands suggesting the ridge pattern at different heights -->
+  <path d="M36 80 Q60 76 100 75 Q140 76 164 80" stroke="#000" stroke-width="0.5" opacity="0.15"/>
+  <path d="M34 110 Q60 106 100 105 Q140 106 166 110" stroke="#000" stroke-width="0.5" opacity="0.15"/>
+  <path d="M33 140 Q58 136 100 135 Q142 136 167 140" stroke="#000" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- Bottom rim/base -->
+  <path d="M32 152 Q32 168 50 175 Q70 182 100 184 Q130 182 150 175 Q168 168 168 152" stroke="#000" stroke-width="1.5" opacity="0.5"/>
+  <!-- Bottom flat edge -->
+  <ellipse cx="100" cy="175" rx="62" ry="10" stroke="#000" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Caramelized surface shine highlights -->
+  <path d="M58 65 Q62 60 70 63" stroke="#000" stroke-width="0.6" opacity="0.15"/>
+  <path d="M72 55 Q78 50 85 54" stroke="#000" stroke-width="0.6" opacity="0.12"/>
+
+  <!-- Shadow suggesting the deep caramelized crust -->
+  <path d="M44 60 Q42 68 40 82" stroke="#000" stroke-width="2" opacity="0.08"/>
+  <path d="M156 60 Q158 68 160 82" stroke="#000" stroke-width="2" opacity="0.08"/>
 </svg>

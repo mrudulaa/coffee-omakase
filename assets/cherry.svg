@@ -1,17 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <!-- Cherry branch with two cherries -->
-  <!-- Stems -->
-  <path d="M100 30 Q95 50 80 75 Q70 90 65 105" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M100 30 Q110 55 125 75 Q135 88 140 100" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
-  <!-- Left cherry -->
-  <circle cx="60" cy="120" r="28" fill="#000" opacity="0.25" stroke="#000" stroke-width="1.5"/>
-  <path d="M48 108 Q55 105 65 108" stroke="#000" stroke-width="0.8" opacity="0.4"/>
-  <!-- Right cherry -->
-  <circle cx="145" cy="115" r="25" fill="#000" opacity="0.25" stroke="#000" stroke-width="1.5"/>
-  <path d="M135 104 Q142 101 150 104" stroke="#000" stroke-width="0.8" opacity="0.4"/>
-  <!-- Leaf -->
-  <path d="M100 30 Q115 20 130 15 Q125 30 110 38 Q102 42 100 30Z" fill="#000" opacity="0.2" stroke="#000" stroke-width="1"/>
-  <line x1="100" y1="30" x2="125" y2="18" stroke="#000" stroke-width="0.6" opacity="0.4"/>
-  <!-- Small leaf -->
-  <path d="M100 30 Q85 22 78 12 Q90 18 98 28Z" fill="#000" opacity="0.15" stroke="#000" stroke-width="0.8"/>
+  <!-- Two cherries on stems with leaf -->
+
+  <!-- Stems curving from top -->
+  <path d="M105 18 Q102 30 96 48 Q88 68 78 82 Q72 92 68 102" stroke="#000" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M105 18 Q112 35 118 52 Q126 72 132 86 Q138 96 142 105" stroke="#000" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Left cherry body -->
+  <circle cx="62" cy="130" r="32" stroke="#000" stroke-width="2"/>
+  <circle cx="62" cy="130" r="32" fill="#000" opacity="0.15"/>
+  <!-- Left cherry highlight -->
+  <path d="M48 118 Q52 112 58 115" stroke="#000" stroke-width="1" opacity="0.3"/>
+  <circle cx="50" cy="116" r="3" fill="#000" opacity="0.06"/>
+  <!-- Left cherry dimple at stem -->
+  <path d="M64 99 Q62 97 60 99" stroke="#000" stroke-width="0.8" opacity="0.4"/>
+  <!-- Left cherry bottom -->
+  <circle cx="62" cy="162" r="1" fill="#000" opacity="0.2"/>
+
+  <!-- Right cherry body -->
+  <circle cx="148" cy="125" r="29" stroke="#000" stroke-width="2"/>
+  <circle cx="148" cy="125" r="29" fill="#000" opacity="0.15"/>
+  <!-- Right cherry highlight -->
+  <path d="M136 114 Q139 109 144 111" stroke="#000" stroke-width="1" opacity="0.3"/>
+  <circle cx="137" cy="112" r="2.5" fill="#000" opacity="0.06"/>
+  <!-- Right cherry dimple -->
+  <path d="M146 97 Q148 95 150 97" stroke="#000" stroke-width="0.8" opacity="0.4"/>
+  <!-- Right cherry bottom -->
+  <circle cx="148" cy="154" r="1" fill="#000" opacity="0.2"/>
+
+  <!-- Large leaf -->
+  <path d="M105 18 Q120 10 138 8 Q148 8 155 14 Q150 22 138 28 Q125 34 112 30 Q106 26 105 18Z" stroke="#000" stroke-width="1.5" fill="#000" opacity="0.12"/>
+  <!-- Leaf midrib -->
+  <path d="M107 20 Q125 14 148 12" stroke="#000" stroke-width="0.8" opacity="0.4"/>
+  <!-- Leaf veins -->
+  <path d="M115 17 Q118 22 120 28" stroke="#000" stroke-width="0.5" opacity="0.25"/>
+  <path d="M125 14 Q127 20 128 26" stroke="#000" stroke-width="0.5" opacity="0.25"/>
+  <path d="M135 12 Q136 18 136 24" stroke="#000" stroke-width="0.5" opacity="0.25"/>
+
+  <!-- Small leaf on opposite side -->
+  <path d="M105 18 Q92 12 80 10 Q74 10 70 15 Q75 20 84 24 Q92 28 100 24 Q104 22 105 18Z" stroke="#000" stroke-width="1.2" fill="#000" opacity="0.08"/>
+  <!-- Small leaf midrib -->
+  <path d="M103 20 Q90 14 74 13" stroke="#000" stroke-width="0.6" opacity="0.3"/>
+  <!-- Small leaf veins -->
+  <path d="M95 16 Q93 20 92 24" stroke="#000" stroke-width="0.4" opacity="0.2"/>
+  <path d="M85 14 Q84 18 84 22" stroke="#000" stroke-width="0.4" opacity="0.2"/>
+
+  <!-- Subtle shadow under cherries -->
+  <ellipse cx="62" cy="165" rx="22" ry="4" fill="#000" opacity="0.06"/>
+  <ellipse cx="148" cy="157" rx="20" ry="3.5" fill="#000" opacity="0.06"/>
 </svg>
