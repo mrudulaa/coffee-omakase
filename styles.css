@@ -187,9 +187,15 @@ a { color: inherit; text-decoration: none; }
   pointer-events: none;
 }
 
-.tile--ethiopia::after { background-image: url('assets/ethiopia.svg'); }
-.tile--colombia::after { background-image: url('assets/colombia.svg'); }
-.tile--kenya::after    { background-image: url('assets/kenya.svg'); }
+.tile--ethiopia::after  { background-image: url('assets/ethiopia.svg'); }
+.tile--colombia::after  { background-image: url('assets/colombia.svg'); }
+.tile--kenya::after     { background-image: url('assets/kenya.svg'); }
+.tile--yuzu::after      { background-image: url('assets/yuzu.svg'); }
+.tile--cherry::after    { background-image: url('assets/cherry.svg'); }
+.tile--nitro::after     { background-image: url('assets/nitro.svg'); }
+.tile--cardamom::after  { background-image: url('assets/cardamom.svg'); }
+.tile--hazelnut::after  { background-image: url('assets/hazelnut.svg'); }
+.tile--canele::after    { background-image: url('assets/canele.svg'); }
 
 /* Country outline on course pages */
 .course--origin {
@@ -213,6 +219,9 @@ a { color: inherit; text-decoration: none; }
 .course--ethiopia::after { background-image: url('../assets/ethiopia.svg'); }
 .course--colombia::after { background-image: url('../assets/colombia.svg'); }
 .course--kenya::after    { background-image: url('../assets/kenya.svg'); }
+.course--yuzu::after     { background-image: url('../assets/yuzu.svg'); }
+.course--cherry::after   { background-image: url('../assets/cherry.svg'); }
+.course--nitro::after    { background-image: url('../assets/nitro.svg'); }
 /* Section labels */
 .section__label {
   font-weight: 500;

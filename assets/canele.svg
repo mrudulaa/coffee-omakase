@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Canelé pastry -->
+  <!-- Body with fluted ridges -->
+  <path d="M45 60 Q40 65 38 80 L35 155 Q35 175 60 180 Q80 185 100 185 Q120 185 140 180 Q165 175 165 155 L162 80 Q160 65 155 60" stroke="#000" stroke-width="1.8" fill="#000" opacity="0.18"/>
+  <!-- Fluted ridges -->
+  <path d="M45 65 Q43 80 42 100 L40 155" stroke="#000" stroke-width="1" opacity="0.3"/>
+  <path d="M60 58 Q57 78 56 100 L54 160" stroke="#000" stroke-width="1" opacity="0.3"/>
+  <path d="M78 55 Q76 75 75 100 L74 165" stroke="#000" stroke-width="1" opacity="0.3"/>
+  <path d="M100 54 Q100 74 100 100 L100 168" stroke="#000" stroke-width="1" opacity="0.3"/>
+  <path d="M122 55 Q124 75 125 100 L126 165" stroke="#000" stroke-width="1" opacity="0.3"/>
+  <path d="M140 58 Q143 78 144 100 L146 160" stroke="#000" stroke-width="1" opacity="0.3"/>
+  <path d="M155 65 Q157 80 158 100 L160 155" stroke="#000" stroke-width="1" opacity="0.3"/>
+  <!-- Crown/top -->
+  <path d="M45 60 Q50 45 70 38 Q85 33 100 32 Q115 33 130 38 Q150 45 155 60" stroke="#000" stroke-width="1.8"/>
+  <!-- Top surface -->
+  <ellipse cx="100" cy="48" rx="52" ry="14" stroke="#000" stroke-width="1" opacity="0.3"/>
+  <!-- Caramel shine -->
+  <path d="M68 70 Q72 65 80 68" stroke="#000" stroke-width="0.8" opacity="0.2"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Citrus slice cross-section -->
+  <circle cx="100" cy="100" r="75" stroke="#000" stroke-width="2"/>
+  <circle cx="100" cy="100" r="65" stroke="#000" stroke-width="1.2"/>
+  <!-- Segments -->
+  <line x1="100" y1="35" x2="100" y2="165" stroke="#000" stroke-width="1"/>
+  <line x1="43.7" y1="67.5" x2="156.3" y2="132.5" stroke="#000" stroke-width="1"/>
+  <line x1="43.7" y1="132.5" x2="156.3" y2="67.5" stroke="#000" stroke-width="1"/>
+  <line x1="35" y1="100" x2="165" y2="100" stroke="#000" stroke-width="1"/>
+  <!-- Segment fills (teardrop pith shapes) -->
+  <path d="M100 42 Q108 65 108 100 Q108 135 100 158 Q92 135 92 100 Q92 65 100 42Z" fill="#000" opacity="0.15"/>
+  <path d="M100 42 Q108 65 108 100 Q108 135 100 158 Q92 135 92 100 Q92 65 100 42Z" fill="#000" opacity="0.15" transform="rotate(45 100 100)"/>
+  <path d="M100 42 Q108 65 108 100 Q108 135 100 158 Q92 135 92 100 Q92 65 100 42Z" fill="#000" opacity="0.15" transform="rotate(90 100 100)"/>
+  <path d="M100 42 Q108 65 108 100 Q108 135 100 158 Q92 135 92 100 Q92 65 100 42Z" fill="#000" opacity="0.15" transform="rotate(135 100 100)"/>
+  <!-- Center pip -->
+  <circle cx="100" cy="100" r="8" fill="#000" opacity="0.2"/>
+  <!-- Leaf -->
+  <path d="M168 30 Q180 15 185 10 Q182 28 172 40 Q165 48 158 42 Q162 36 168 30Z" fill="#000" opacity="0.3" stroke="#000" stroke-width="0.8"/>
+</svg>

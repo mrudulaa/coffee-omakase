@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Hazelnut with husk -->
+  <!-- Nut body -->
+  <path d="M65 75 Q55 85 52 110 Q52 140 65 155 Q80 168 100 168 Q120 168 135 155 Q148 140 148 110 Q148 85 135 75 Q120 65 100 65 Q80 65 65 75Z" fill="#000" opacity="0.2" stroke="#000" stroke-width="1.8"/>
+  <!-- Nut highlight -->
+  <path d="M78 82 Q72 92 70 110 Q70 128 78 140" stroke="#000" stroke-width="0.8" opacity="0.2"/>
+  <!-- Husk leaves wrapping top -->
+  <path d="M52 90 Q40 70 45 45 Q55 55 60 72 Q62 78 58 85Z" fill="#000" opacity="0.15" stroke="#000" stroke-width="1.2"/>
+  <path d="M72 72 Q65 48 72 25 Q80 42 78 60 Q77 67 74 70Z" fill="#000" opacity="0.15" stroke="#000" stroke-width="1.2"/>
+  <path d="M95 65 Q95 38 105 18 Q110 38 105 58 Q103 63 98 65Z" fill="#000" opacity="0.15" stroke="#000" stroke-width="1.2"/>
+  <path d="M118 68 Q125 45 135 28 Q135 48 128 65 Q126 70 120 70Z" fill="#000" opacity="0.15" stroke="#000" stroke-width="1.2"/>
+  <path d="M138 80 Q148 60 155 42 Q152 62 142 78 Q140 82 136 82Z" fill="#000" opacity="0.15" stroke="#000" stroke-width="1.2"/>
+  <!-- Point at bottom -->
+  <path d="M95 168 Q100 178 105 168" stroke="#000" stroke-width="1" opacity="0.3"/>
+</svg>
