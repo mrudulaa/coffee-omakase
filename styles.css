@@ -42,7 +42,7 @@ a { color: inherit; text-decoration: none; }
    ============================================ */
 
 .gallery {
-  max-width: 560px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 32px 20px 48px;
   min-height: 100vh;
@@ -90,13 +90,22 @@ a { color: inherit; text-decoration: none; }
   flex: 1;
 }
 
-@media (min-width: 640px) {
-  .grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+@media (min-width: 480px) {
+  .grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+}
+
+@media (min-width: 768px) {
+  .gallery { padding: 40px 28px 56px; }
+  .grid { gap: 16px; }
+  .tile { padding: 20px 18px 24px; }
+  .tile__name { font-size: clamp(16px, 3vw, 20px); }
+  .tile__note { font-size: 11px; }
+  .tile__num { font-size: 15px; }
 }
 
 .tile {
   aspect-ratio: 3 / 4;
-  padding: 16px 14px 20px;
+  padding: 18px 16px 22px;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -104,7 +113,6 @@ a { color: inherit; text-decoration: none; }
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: pointer;
   position: relative;
-  overflow: hidden;
 }
 
 .tile:active {
@@ -146,6 +154,20 @@ a { color: inherit; text-decoration: none; }
 .tile--journal  { background: var(--journal);  color: var(--bg); }
 .tile--dessert  { background: var(--dessert);  color: var(--bg); }
 .tile--shop     { background: var(--shop);     color: var(--kale); }
+/* Section labels */
+.section__label {
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(251, 248, 237, 0.45);
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.section__label:first-child {
+  margin-top: 0;
+}
 
 .gallery__footer {
   text-align: center;
