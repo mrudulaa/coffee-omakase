@@ -24,7 +24,7 @@
 
     <h2 class="section__label">The Flight</h2>
     <div class="grid">
-      <a href="courses/01-ethiopia.html" class="tile tile--bouquet">
+      <a href="courses/01-ethiopia.html" class="tile tile--bouquet tile--origin tile--ethiopia">
         <span class="tile__num">01</span>
         <div>
           <div class="tile__name">Opening Act</div>
@@ -32,7 +32,7 @@
         </div>
       </a>
 
-      <a href="courses/02-colombia.html" class="tile tile--dessert">
+      <a href="courses/02-colombia.html" class="tile tile--dessert tile--origin tile--colombia">
         <span class="tile__num">02</span>
         <div>
           <div class="tile__name">The Body</div>
@@ -40,7 +40,7 @@
         </div>
       </a>
 
-      <a href="courses/03-kenya.html" class="tile tile--coral">
+      <a href="courses/03-kenya.html" class="tile tile--coral tile--origin tile--kenya">
         <span class="tile__num">03</span>
         <div>
           <div class="tile__name">The Closer</div>
@@ -109,5 +109,16 @@
 
 </main>
 
+<script>
+document.querySelectorAll('.tile[href]').forEach(tile => {
+  tile.addEventListener('click', e => {
+    const href = tile.getAttribute('href');
+    if (!href || href === '#') return;
+    e.preventDefault();
+    tile.classList.add('is-flipping');
+    setTimeout(() => { window.location.href = href; }, 450);
+  });
+});
+</script>
 </body>
 </html>
