@@ -1,46 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <!-- Coffee cup / latte with saucer -->
-
-  <!-- Saucer -->
-  <ellipse cx="100" cy="172" rx="70" ry="12" stroke="#000" stroke-width="1.8"/>
-  <ellipse cx="100" cy="168" rx="55" ry="8" stroke="#000" stroke-width="0.8" opacity="0.3"/>
-
-  <!-- Cup body - elegant tapered shape -->
-  <path d="M55 80 Q52 85 50 100 L48 150 Q48 168 65 172 Q80 175 100 175 Q120 175 135 172 Q152 168 152 150 L150 100 Q148 85 145 80" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
-
-  <!-- Cup rim -->
-  <ellipse cx="100" cy="78" rx="47" ry="14" stroke="#000" stroke-width="2"/>
-
-  <!-- Handle -->
-  <path d="M152 95 Q168 95 174 108 Q180 122 174 136 Q168 148 152 146" stroke="#000" stroke-width="2" stroke-linecap="round" fill="none"/>
-  <!-- Handle inner -->
-  <path d="M152 102 Q163 102 167 112 Q172 122 167 132 Q163 140 152 140" stroke="#000" stroke-width="0.8" opacity="0.3" fill="none"/>
-
-  <!-- Liquid surface -->
-  <ellipse cx="100" cy="88" rx="42" ry="10" stroke="#000" stroke-width="0.8" opacity="0.25"/>
-
-  <!-- Latte art - rosetta pattern -->
-  <path d="M100 82 Q100 90 100 96" stroke="#000" stroke-width="0.8" opacity="0.3"/>
-  <!-- Central spine -->
-  <path d="M100 82 L100 95" stroke="#000" stroke-width="0.6" opacity="0.25"/>
-  <!-- Leaf pairs -->
-  <path d="M100 84 Q94 83 90 85 Q94 86 100 85" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-  <path d="M100 84 Q106 83 110 85 Q106 86 100 85" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-  <path d="M100 87 Q93 86 88 88 Q93 89 100 88" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-  <path d="M100 87 Q107 86 112 88 Q107 89 100 88" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-  <path d="M100 90 Q94 89 90 91 Q94 92 100 91" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-  <path d="M100 90 Q106 89 110 91 Q106 92 100 91" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-  <path d="M100 93 Q95 92 92 94 Q95 95 100 94" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-  <path d="M100 93 Q105 92 108 94 Q105 95 100 94" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-  <!-- Heart at top -->
-  <path d="M98 81 Q96 79 98 78 Q100 79 100 81 Q100 79 102 78 Q104 79 102 81 Q100 83 100 83 Q100 83 98 81Z" fill="#000" opacity="0.15"/>
-
-  <!-- Steam wisps -->
-  <path d="M82 62 Q78 48 82 36 Q84 42 83 52 Q82 58 82 62" stroke="#000" stroke-width="1.2" opacity="0.15" stroke-linecap="round"/>
-  <path d="M100 56 Q96 40 100 26 Q103 36 102 46 Q101 52 100 56" stroke="#000" stroke-width="1.2" opacity="0.18" stroke-linecap="round"/>
-  <path d="M118 62 Q114 46 118 34 Q121 42 120 52 Q119 58 118 62" stroke="#000" stroke-width="1.2" opacity="0.15" stroke-linecap="round"/>
-
-  <!-- Cup subtle shading -->
-  <path d="M60 90 Q58 110 57 130 Q56 150 60 165" stroke="#000" stroke-width="0.5" opacity="0.1"/>
-  <path d="M140 90 Q142 110 143 130 Q144 150 140 165" stroke="#000" stroke-width="0.5" opacity="0.1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M10 2v2" />
+  <path d="M14 2v2" />
+  <path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" />
+  <path d="M6 2v2" />
 </svg>

@@ -1,50 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <!-- Cardamom pods cluster - botanical illustration style -->
-
-  <!-- Main pod (center, large) -->
-  <path d="M82 48 Q70 60 66 95 Q64 130 72 148 Q78 158 95 162 Q112 158 118 148 Q126 130 124 95 Q120 60 108 48 Q100 40 82 48Z" stroke="#000" stroke-width="2" fill="#000" opacity="0.1"/>
-  <!-- Main pod longitudinal ridges -->
-  <path d="M82 52 Q74 70 72 95 Q71 120 74 145" stroke="#000" stroke-width="0.8" opacity="0.35"/>
-  <path d="M90 46 Q83 68 82 95 Q81 125 84 152" stroke="#000" stroke-width="0.8" opacity="0.35"/>
-  <path d="M100 43 Q98 66 98 95 Q98 126 100 156" stroke="#000" stroke-width="0.8" opacity="0.35"/>
-  <path d="M110 46 Q115 68 116 95 Q117 125 114 152" stroke="#000" stroke-width="0.8" opacity="0.35"/>
-  <!-- Main pod cap/calyx at top -->
-  <path d="M82 48 Q90 42 100 40 Q110 42 118 48" stroke="#000" stroke-width="1.5"/>
-  <path d="M86 48 Q95 44 104 48" stroke="#000" stroke-width="0.6" opacity="0.3"/>
-  <!-- Main pod stem -->
-  <path d="M95 40 Q93 32 95 24" stroke="#000" stroke-width="1.2" stroke-linecap="round"/>
-  <!-- Main pod bottom split (showing seeds) -->
-  <path d="M88 158 Q95 165 102 158" stroke="#000" stroke-width="0.8" opacity="0.4"/>
-  <!-- Seeds peeking out -->
-  <circle cx="92" cy="160" r="2" fill="#000" opacity="0.15"/>
-  <circle cx="98" cy="161" r="2" fill="#000" opacity="0.15"/>
-
-  <!-- Left pod (smaller, slightly rotated) -->
-  <path d="M30 72 Q22 82 20 108 Q19 134 25 148 Q30 155 42 158 Q54 155 58 148 Q64 134 62 108 Q60 82 52 72 Q45 66 30 72Z" stroke="#000" stroke-width="1.5" fill="#000" opacity="0.07" transform="rotate(-12 40 115)"/>
-  <!-- Left pod ridges -->
-  <path d="M32 76 Q26 92 25 110 Q24 128 28 144" stroke="#000" stroke-width="0.6" opacity="0.25" transform="rotate(-12 40 115)"/>
-  <path d="M42 70 Q38 88 38 110 Q38 132 40 148" stroke="#000" stroke-width="0.6" opacity="0.25" transform="rotate(-12 40 115)"/>
-  <path d="M50 74 Q52 92 52 110 Q52 130 50 146" stroke="#000" stroke-width="0.6" opacity="0.25" transform="rotate(-12 40 115)"/>
-  <!-- Left pod cap -->
-  <path d="M30 72 Q38 66 52 72" stroke="#000" stroke-width="1" transform="rotate(-12 40 115)"/>
-  <!-- Left pod stem -->
-  <path d="M38 66 Q35 58 38 50" stroke="#000" stroke-width="1" stroke-linecap="round" transform="rotate(-12 40 115)"/>
-
-  <!-- Right pod (smaller, slightly rotated opposite) -->
-  <path d="M142 78 Q134 86 132 108 Q131 130 136 142 Q140 148 150 150 Q160 148 164 142 Q168 130 167 108 Q165 86 158 78 Q152 72 142 78Z" stroke="#000" stroke-width="1.5" fill="#000" opacity="0.07" transform="rotate(10 150 112)"/>
-  <!-- Right pod ridges -->
-  <path d="M144 82 Q138 96 138 110 Q138 126 140 138" stroke="#000" stroke-width="0.6" opacity="0.25" transform="rotate(10 150 112)"/>
-  <path d="M152 76 Q150 94 150 112 Q150 130 152 144" stroke="#000" stroke-width="0.6" opacity="0.25" transform="rotate(10 150 112)"/>
-  <path d="M160 80 Q162 96 162 112 Q162 128 160 140" stroke="#000" stroke-width="0.6" opacity="0.25" transform="rotate(10 150 112)"/>
-  <!-- Right pod cap -->
-  <path d="M142 78 Q148 72 158 78" stroke="#000" stroke-width="1" transform="rotate(10 150 112)"/>
-  <!-- Right pod stem -->
-  <path d="M148 72 Q146 64 148 56" stroke="#000" stroke-width="1" stroke-linecap="round" transform="rotate(10 150 112)"/>
-
-  <!-- Scattered loose seeds below -->
-  <ellipse cx="75" cy="180" rx="4" ry="3.5" fill="#000" opacity="0.12" stroke="#000" stroke-width="0.6" transform="rotate(-15 75 180)"/>
-  <ellipse cx="85" cy="184" rx="3.5" ry="3" fill="#000" opacity="0.1" stroke="#000" stroke-width="0.6" transform="rotate(10 85 184)"/>
-  <ellipse cx="95" cy="182" rx="4" ry="3" fill="#000" opacity="0.12" stroke="#000" stroke-width="0.6" transform="rotate(-5 95 182)"/>
-  <ellipse cx="108" cy="178" rx="3.5" ry="3" fill="#000" opacity="0.1" stroke="#000" stroke-width="0.6" transform="rotate(20 108 178)"/>
-  <ellipse cx="118" cy="182" rx="3" ry="2.5" fill="#000" opacity="0.08" stroke="#000" stroke-width="0.5" transform="rotate(-8 118 182)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1" />
+  <circle cx="12" cy="8" r="2" />
+  <path d="M12 10v12" />
+  <path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z" />
+  <path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z" />
 </svg>

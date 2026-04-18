@@ -1,43 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <!-- Canelé pastry - classic fluted French pastry -->
-
-  <!-- Main body with characteristic fluted cylindrical shape -->
-  <!-- Outer silhouette -->
-  <path d="M42 55 Q38 62 36 78 L32 152 Q32 172 50 178 Q65 184 82 186 Q92 187 100 187 Q108 187 118 186 Q135 184 150 178 Q168 172 168 152 L164 78 Q162 62 158 55" stroke="#000" stroke-width="2.2" fill="#000" opacity="0.1"/>
-
-  <!-- Crown/top dome shape -->
-  <path d="M42 55 Q48 38 65 30 Q80 24 100 22 Q120 24 135 30 Q152 38 158 55" stroke="#000" stroke-width="2.2"/>
-
-  <!-- Top flat surface -->
-  <ellipse cx="100" cy="40" rx="56" ry="16" stroke="#000" stroke-width="1.2" opacity="0.25"/>
-
-  <!-- Characteristic vertical fluted ridges -->
-  <!-- Deep grooves running down the body -->
-  <path d="M42 58 Q40 72 39 95 L37 145 Q36 158 38 168" stroke="#000" stroke-width="1.2" opacity="0.4"/>
-  <path d="M54 48 Q51 66 50 90 L48 148 Q47 162 50 174" stroke="#000" stroke-width="1.2" opacity="0.4"/>
-  <path d="M68 40 Q64 60 63 88 L62 150 Q61 166 64 180" stroke="#000" stroke-width="1.2" opacity="0.35"/>
-  <path d="M84 34 Q80 56 79 88 L78 155 Q78 170 80 184" stroke="#000" stroke-width="1.2" opacity="0.35"/>
-  <path d="M100 32 Q100 54 100 88 L100 158 Q100 172 100 187" stroke="#000" stroke-width="1.2" opacity="0.35"/>
-  <path d="M116 34 Q120 56 121 88 L122 155 Q122 170 120 184" stroke="#000" stroke-width="1.2" opacity="0.35"/>
-  <path d="M132 40 Q136 60 137 88 L138 150 Q139 166 136 180" stroke="#000" stroke-width="1.2" opacity="0.35"/>
-  <path d="M146 48 Q149 66 150 90 L152 148 Q153 162 150 174" stroke="#000" stroke-width="1.2" opacity="0.4"/>
-  <path d="M158 58 Q160 72 161 95 L163 145 Q164 158 162 168" stroke="#000" stroke-width="1.2" opacity="0.4"/>
-
-  <!-- Horizontal bands suggesting the ridge pattern at different heights -->
-  <path d="M36 80 Q60 76 100 75 Q140 76 164 80" stroke="#000" stroke-width="0.5" opacity="0.15"/>
-  <path d="M34 110 Q60 106 100 105 Q140 106 166 110" stroke="#000" stroke-width="0.5" opacity="0.15"/>
-  <path d="M33 140 Q58 136 100 135 Q142 136 167 140" stroke="#000" stroke-width="0.5" opacity="0.15"/>
-
-  <!-- Bottom rim/base -->
-  <path d="M32 152 Q32 168 50 175 Q70 182 100 184 Q130 182 150 175 Q168 168 168 152" stroke="#000" stroke-width="1.5" opacity="0.5"/>
-  <!-- Bottom flat edge -->
-  <ellipse cx="100" cy="175" rx="62" ry="10" stroke="#000" stroke-width="0.8" opacity="0.2"/>
-
-  <!-- Caramelized surface shine highlights -->
-  <path d="M58 65 Q62 60 70 63" stroke="#000" stroke-width="0.6" opacity="0.15"/>
-  <path d="M72 55 Q78 50 85 54" stroke="#000" stroke-width="0.6" opacity="0.12"/>
-
-  <!-- Shadow suggesting the deep caramelized crust -->
-  <path d="M44 60 Q42 68 40 82" stroke="#000" stroke-width="2" opacity="0.08"/>
-  <path d="M156 60 Q158 68 160 82" stroke="#000" stroke-width="2" opacity="0.08"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 13H3" />
+  <path d="M16 17H3" />
+  <path d="m7.2 7.9-3.388 2.5A2 2 0 0 0 3 12.01V20a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-8.654c0-2-2.44-6.026-6.44-8.026a1 1 0 0 0-1.082.057L10.4 5.6" />
+  <circle cx="9" cy="7" r="2" />
 </svg>

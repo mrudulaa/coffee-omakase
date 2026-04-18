@@ -1,52 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <!-- Hazelnut with involucre (husk) - botanical illustration style -->
-
-  <!-- Nut body -->
-  <path d="M62 82 Q52 95 50 118 Q50 145 62 158 Q75 172 100 172 Q125 172 138 158 Q150 145 150 118 Q150 95 138 82 Q125 70 100 68 Q75 70 62 82Z" stroke="#000" stroke-width="2" fill="#000" opacity="0.12"/>
-
-  <!-- Nut surface texture - subtle vertical grain lines -->
-  <path d="M75 78 Q68 95 66 118 Q66 142 72 160" stroke="#000" stroke-width="0.5" opacity="0.15"/>
-  <path d="M85 72 Q78 92 77 118 Q77 145 82 166" stroke="#000" stroke-width="0.5" opacity="0.15"/>
-  <path d="M100 68 Q98 90 98 118 Q98 148 100 170" stroke="#000" stroke-width="0.5" opacity="0.12"/>
-  <path d="M115 72 Q120 92 121 118 Q121 145 118 166" stroke="#000" stroke-width="0.5" opacity="0.15"/>
-  <path d="M128 78 Q134 95 136 118 Q136 142 130 160" stroke="#000" stroke-width="0.5" opacity="0.15"/>
-
-  <!-- Nut tip (pointed bottom) -->
-  <path d="M94 170 Q100 180 106 170" stroke="#000" stroke-width="1.2" opacity="0.4"/>
-  <circle cx="100" cy="175" r="1.5" fill="#000" opacity="0.15"/>
-
-  <!-- Involucre / husk leaves wrapping top of nut -->
-  <!-- Left outer husk leaf -->
-  <path d="M48 98 Q38 72 42 42 Q44 32 48 28 Q52 40 54 58 Q56 74 52 90 Q50 95 48 98Z" stroke="#000" stroke-width="1.5" fill="#000" opacity="0.08"/>
-  <path d="M46 35 Q50 55 52 78 Q52 88 48 98" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-
-  <!-- Left inner husk leaf -->
-  <path d="M65 82 Q58 58 62 30 Q64 22 68 18 Q70 32 70 50 Q70 66 66 78 Q65 80 65 82Z" stroke="#000" stroke-width="1.5" fill="#000" opacity="0.08"/>
-  <path d="M66 24 Q68 45 68 65 Q67 76 65 82" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-
-  <!-- Center-left husk leaf -->
-  <path d="M82 74 Q80 48 85 22 Q87 14 92 10 Q92 26 90 44 Q88 60 84 72 Q83 73 82 74Z" stroke="#000" stroke-width="1.5" fill="#000" opacity="0.08"/>
-  <path d="M88 15 Q89 38 87 58 Q85 68 82 74" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-
-  <!-- Center husk leaf -->
-  <path d="M100 68 Q100 40 105 16 Q107 8 110 5 Q110 18 108 36 Q106 52 102 66 Q101 67 100 68Z" stroke="#000" stroke-width="1.5" fill="#000" opacity="0.08"/>
-  <path d="M108 10 Q108 32 106 52 Q104 62 100 68" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-
-  <!-- Center-right husk leaf -->
-  <path d="M118 74 Q122 48 128 24 Q130 16 134 14 Q132 28 128 46 Q124 62 120 72 Q119 73 118 74Z" stroke="#000" stroke-width="1.5" fill="#000" opacity="0.08"/>
-  <path d="M132 18 Q130 38 126 56 Q122 68 118 74" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-
-  <!-- Right inner husk leaf -->
-  <path d="M135 82 Q140 58 138 32 Q137 24 134 20 Q132 34 132 52 Q132 68 134 78 Q135 80 135 82Z" stroke="#000" stroke-width="1.5" fill="#000" opacity="0.08"/>
-  <path d="M136 26 Q134 46 134 66 Q135 76 135 82" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-
-  <!-- Right outer husk leaf -->
-  <path d="M152 98 Q160 74 158 46 Q157 36 154 30 Q150 44 148 62 Q147 78 150 92 Q151 95 152 98Z" stroke="#000" stroke-width="1.5" fill="#000" opacity="0.08"/>
-  <path d="M156 36 Q152 56 150 76 Q150 90 152 98" stroke="#000" stroke-width="0.5" opacity="0.2"/>
-
-  <!-- Husk edge connecting at nut top -->
-  <path d="M48 98 Q55 88 65 82 Q72 76 82 74 Q90 70 100 68 Q110 70 118 74 Q128 78 135 82 Q145 88 152 98" stroke="#000" stroke-width="1" opacity="0.3" stroke-dasharray="2 3"/>
-
-  <!-- Subtle highlight on nut -->
-  <path d="M72 95 Q68 108 68 125 Q68 140 72 150" stroke="#000" stroke-width="0.8" opacity="0.08"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 4V2" />
+  <path d="M5 10v4a7.004 7.004 0 0 0 5.277 6.787c.412.104.802.292 1.102.592L12 22l.621-.621c.3-.3.69-.488 1.102-.592A7.003 7.003 0 0 0 19 14v-4" />
+  <path d="M12 4C8 4 4.5 6 4 8c-.243.97-.919 1.952-2 3 1.31-.082 1.972-.29 3-1 .54.92.982 1.356 2 2 1.452-.647 1.954-1.098 2.5-2 .595.995 1.151 1.427 2.5 2 1.31-.621 1.862-1.058 2.5-2 .629.977 1.162 1.423 2.5 2 1.209-.548 1.68-.967 2-2 1.032.916 1.683 1.157 3 1-1.297-1.036-1.758-2.03-2-3-.5-2-4-4-8-4Z" />
 </svg>
