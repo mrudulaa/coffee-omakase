@@ -9,11 +9,11 @@ omakase/
 ├── index.html                    # Gallery grid (home)
 ├── styles.css                    # Shared styles
 ├── courses/
-│   ├── 01-kenya.html
-│   ├── 02-ethiopia.html
-│   ├── 03-guatemala.html
-│   ├── 04-coconut-cooler.html
-│   ├── 05-citrus-tonic.html
+│   ├── 01-ethiopia.html
+│   ├── 02-colombia.html
+│   ├── 03-kenya.html
+│   ├── 04-yuzu-cooler.html
+│   ├── 05-cherry-matcha.html
 │   └── 06-nitro-latte.html
 ├── generate.py                   # Regenerates all course pages
 ├── vercel.json
