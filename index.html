@@ -116,7 +116,7 @@ document.querySelectorAll('.tile[href]').forEach(tile => {
     if (!href || href === '#') return;
     e.preventDefault();
     tile.classList.add('is-flipping');
-    setTimeout(() => { window.location.href = href; }, 450);
+    setTimeout(() => { window.location.href = href; }, 300);
   });
 });
 </script>
