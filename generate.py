@@ -89,6 +89,11 @@ template = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="{theme}">
 <title>{name} — Coffee Omakase</title>
+<meta name="description" content="{description}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{name} — Coffee Omakase">
+<meta property="og:description" content="{description}">
+<meta property="og:image" content="../assets/apple-touch-icon.png">
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../styles.css">
@@ -148,6 +153,7 @@ out_dir.mkdir(parents=True, exist_ok=True)
 
 for c in courses:
     notes_html = "\n".join([f'        <span class="note">{n}</span>' for n in c["notes"]])
+    description = f'{c["role"]}. Tasting notes: {", ".join(c["notes"])}.'
 
     if c["pairing"]:
         pairing_html = f'<div class="pairing">{c["pairing"]}</div>'
@@ -175,6 +181,7 @@ for c in courses:
         num=c["num"],
         origin=c["origin"],
         role=c["role"],
+        description=description,
         notes_html=notes_html,
         pairing_html=pairing_html,
         prev_html=prev_html,
