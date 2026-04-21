@@ -4,6 +4,7 @@ from pathlib import Path
 courses = [
     {
         "slug": "01-ethiopia",
+        "origin_key": "ethiopia",
         "num": "01",
         "variant": "bouquet",
         "origin": "Ethiopia Uraga Raro Boda · Pour over",
@@ -17,6 +18,7 @@ courses = [
     },
     {
         "slug": "02-colombia",
+        "origin_key": "colombia",
         "num": "02",
         "variant": "dessert",
         "origin": "Colombia Buesaco · Maricela Ordoñez · Pour over",
@@ -30,6 +32,7 @@ courses = [
     },
     {
         "slug": "03-kenya",
+        "origin_key": "kenya",
         "num": "03",
         "variant": "coral",
         "origin": "Kenya Nyeri Karuthi AA · Pour over",
@@ -43,6 +46,7 @@ courses = [
     },
     {
         "slug": "04-yuzu-cooler",
+        "origin_key": "yuzu",
         "num": "04",
         "variant": "shop",
         "origin": "Specialty · Citrusy · Batched cold",
@@ -56,6 +60,7 @@ courses = [
     },
     {
         "slug": "05-cherry-matcha",
+        "origin_key": "cherry",
         "num": "05",
         "variant": "journal",
         "origin": "Specialty · Floral · Matcha",
@@ -69,6 +74,7 @@ courses = [
     },
     {
         "slug": "06-nitro-latte",
+        "origin_key": "nitro",
         "num": "06",
         "variant": "caramel",
         "origin": "Specialty · Nitro",
@@ -81,6 +87,8 @@ courses = [
         "next": None,
     },
 ]
+
+TOTAL_COURSES = 6
 
 template = """<!DOCTYPE html>
 <html lang="en">
@@ -100,12 +108,16 @@ template = """<!DOCTYPE html>
 </head>
 <body>
 
-<main class="course course--{variant}">
+<main class="course course--{variant} course--origin course--{origin_key}">
 
   <nav class="course__nav">
     <a href="../index.html" class="course__back">← All courses</a>
     <span class="course__counter">{num} of 06</span>
   </nav>
+
+  <ol class="course__dots" aria-label="Course {num} of 06">
+{dots_html}
+  </ol>
 
   <section class="course__hero">
 
@@ -148,12 +160,23 @@ theme_map = {
     "shop": "#cbd0af",
 }
 
-out_dir = Path("/home/claude/omakase/courses")
+out_dir = Path(__file__).parent / "courses"
 out_dir.mkdir(parents=True, exist_ok=True)
 
 for c in courses:
     notes_html = "\n".join([f'        <span class="note">{n}</span>' for n in c["notes"]])
     description = f'{c["role"]}. Tasting notes: {", ".join(c["notes"])}.'
+
+    dots_lines = []
+    position = int(c["num"])
+    for i in range(1, TOTAL_COURSES + 1):
+        if i < position:
+            dots_lines.append('    <li class="course__dots-item course__dots-item--past"></li>')
+        elif i == position:
+            dots_lines.append('    <li class="course__dots-item course__dots-item--current" aria-current="step"></li>')
+        else:
+            dots_lines.append('    <li class="course__dots-item"></li>')
+    dots_html = "\n".join(dots_lines)
 
     if c["pairing"]:
         pairing_html = f'<div class="pairing">{c["pairing"]}</div>'
@@ -177,12 +200,14 @@ for c in courses:
     html = template.format(
         theme=theme_map[c["variant"]],
         variant=c["variant"],
+        origin_key=c["origin_key"],
         name=c["name"],
         num=c["num"],
         origin=c["origin"],
         role=c["role"],
         description=description,
         notes_html=notes_html,
+        dots_html=dots_html,
         pairing_html=pairing_html,
         prev_html=prev_html,
         next_html=next_html,
