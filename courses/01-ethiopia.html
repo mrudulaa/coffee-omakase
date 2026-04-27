@@ -51,6 +51,17 @@
     </div>
 
     <div class="course__section">
+      <div class="course__label">Brew specs</div>
+      <dl class="brew-specs">
+        <dt>Dose</dt><dd>18 g</dd>
+        <dt>Ratio</dt><dd>1:16</dd>
+        <dt>Temp</dt><dd>94°C / 201°F</dd>
+        <dt>Grind</dt><dd>Medium-fine</dd>
+        <dt>Method</dt><dd>V60, ~2:45 total</dd>
+      </dl>
+    </div>
+
+    <div class="course__section">
       <div class="course__label">Paired with</div>
       <div class="pairing pairing__none">Pastry pairing · forthcoming</div>
     </div>
@@ -64,5 +75,29 @@
 
 </main>
 
+<script>
+(function() {
+  if (!window.matchMedia('(max-width: 767px)').matches) return;
+  var prevHref = null, nextHref = null;
+  document.querySelectorAll('.course__pager a.pager-link').forEach(function(a) {
+    if (a.textContent.trim().charAt(0) === '←') prevHref = a.getAttribute('href');
+    else nextHref = a.getAttribute('href');
+  });
+  if (!prevHref && !nextHref) return;
+  var startX = 0, startY = 0;
+  document.addEventListener('touchstart', function(e) {
+    var t = e.changedTouches[0];
+    startX = t.screenX;
+    startY = t.screenY;
+  }, { passive: true });
+  document.addEventListener('touchend', function(e) {
+    var t = e.changedTouches[0];
+    var dx = t.screenX - startX, dy = t.screenY - startY;
+    if (Math.abs(dx) < 60 || Math.abs(dy) > Math.abs(dx)) return;
+    if (dx < 0 && nextHref) window.location.href = nextHref;
+    else if (dx > 0 && prevHref) window.location.href = prevHref;
+  }, { passive: true });
+})();
+</script>
 </body>
 </html>
