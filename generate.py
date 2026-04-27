@@ -268,7 +268,7 @@ for c in courses:
     if c["prev"]:
         prev_html = f'<a href="{c["prev"]}.html" class="pager-link">← previous</a>'
     else:
-        prev_html = '<span class="pager-link pager-link--disabled">← previous</span>'
+        prev_html = '<a href="../index.html" class="pager-link">← back to menu</a>'
 
     if c["next"]:
         next_html = f'<a href="{c["next"]}.html" class="pager-link">next course →</a>'
