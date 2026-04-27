@@ -2,12 +2,14 @@
    Coffee Omakase — Shared Styles
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700;6..96,800;6..96,900&family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Platypi:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Syne:wght@400;500;600;700;800&display=swap');
 
 :root {
   /* Palette */
-  --bg: #2d1b14;          /* espresso */
-  --cream: #fbf8ed;       /* paper */
+  --bg: #2d1b14;          /* espresso (still used as tile text color on light tiles) */
+  --cream: #fbf8ed;       /* paper (still used as tile text color on dark tiles) */
+  --paper: #f5efe2;       /* page background — warm paper */
+  --ink: #2d1b14;          /* page text — espresso */
   --coral: #d97066;       /* rose petals */
   --dessert: #b49c84;     /* dessert cup */
   --shop: #cbd0af;        /* shop window foggy */
@@ -26,8 +28,8 @@ html { -webkit-text-size-adjust: 100%; }
 
 body {
   font-family: var(--font);
-  background: var(--bg);
-  color: var(--cream);
+  background: var(--paper);
+  color: var(--ink);
   min-height: 100vh;
   min-height: 100dvh;
   line-height: 1.5;
@@ -58,11 +60,11 @@ a { color: inherit; text-decoration: none; }
 }
 
 .hero__title {
-  font-family: 'Bodoni Moda', serif;
+  font-family: 'Platypi', serif;
   font-weight: 800;
   font-size: clamp(44px, 14vw, 112px);
-  line-height: 0.92;
-  letter-spacing: -0.025em;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
   margin-bottom: 24px;
   overflow-wrap: anywhere;
 }
@@ -71,7 +73,7 @@ a { color: inherit; text-decoration: none; }
   font-family: 'Bad Script', cursive;
   font-size: clamp(18px, 4.2vw, 22px);
   line-height: 1.5;
-  color: rgba(251, 248, 237, 0.78);
+  color: rgba(45, 27, 20, 0.78);
   max-width: 22em;
   margin-bottom: 26px;
 }
@@ -251,7 +253,7 @@ a { color: inherit; text-decoration: none; }
 .section-divider__name {
   font-family: 'Bad Script', cursive;
   font-size: 17px;
-  color: rgba(251, 248, 237, 0.78);
+  color: rgba(45, 27, 20, 0.78);
   white-space: nowrap;
 }
 
@@ -259,7 +261,7 @@ a { color: inherit; text-decoration: none; }
   content: '';
   flex: 1;
   height: 1px;
-  background: rgba(251, 248, 237, 0.16);
+  background: rgba(45, 27, 20, 0.16);
   align-self: center;
   margin-left: 2px;
 }
@@ -291,7 +293,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(251, 248, 237, 0.7);
+  color: rgba(45, 27, 20, 0.7);
   transition: color 0.2s ease;
   display: inline-flex;
   align-items: center;
@@ -351,11 +353,11 @@ a { color: inherit; text-decoration: none; }
 }
 
 .course__num {
-  font-family: 'Bodoni Moda', serif;
+  font-family: 'Platypi', serif;
   font-weight: 800;
   font-size: clamp(88px, 26vw, 132px);
   line-height: 0.9;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   margin-bottom: 24px;
 }
 
