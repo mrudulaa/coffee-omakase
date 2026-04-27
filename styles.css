@@ -451,7 +451,6 @@ a { color: inherit; text-decoration: none; }
 }
 
 .pager-link:hover { opacity: 1; }
-.pager-link--disabled { opacity: 0.2; pointer-events: none; }
 
 /* Course color variants (backgrounds match tile colors) */
 .course--coral    { background: var(--coral);    color: var(--bg); }
