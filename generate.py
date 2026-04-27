@@ -6,10 +6,18 @@ courses = [
         "slug": "01-ethiopia",
         "num": "01",
         "variant": "bouquet",
+        "origin_slug": "ethiopia",
         "origin": "Ethiopia Uraga Raro Boda · Pour over",
         "name": "Opening Act",
         "role": "Lift, fragrance, a delicate first impression",
         "notes": ["star jasmine", "earl grey", "bergamot", "limeade", "honeyed finish"],
+        "brew_specs": [
+            ("Dose", "18 g"),
+            ("Ratio", "1:16"),
+            ("Temp", "94°C / 201°F"),
+            ("Grind", "Medium-fine"),
+            ("Method", "V60, ~2:45 total"),
+        ],
         "pairing": None,
         "pairing_status": "tbd",
         "prev": None,
@@ -19,10 +27,18 @@ courses = [
         "slug": "02-colombia",
         "num": "02",
         "variant": "dessert",
+        "origin_slug": "colombia",
         "origin": "Colombia Buesaco · Maricela Ordoñez · Pour over",
         "name": "The Body",
         "role": "Balance, sweetness, a calmer middle",
         "notes": ["caramel", "brown sugar", "green apple", "rose hips", "english breakfast"],
+        "brew_specs": [
+            ("Dose", "18 g"),
+            ("Ratio", "1:16"),
+            ("Temp", "93°C / 199°F"),
+            ("Grind", "Medium"),
+            ("Method", "V60, ~3:00 total"),
+        ],
         "pairing": None,
         "pairing_status": "tbd",
         "prev": "01-ethiopia",
@@ -32,10 +48,18 @@ courses = [
         "slug": "03-kenya",
         "num": "03",
         "variant": "coral",
+        "origin_slug": "kenya",
         "origin": "Kenya Nyeri Karuthi AA · Pour over",
         "name": "The Closer",
         "role": "Tension, brightness, a memorable finish",
         "notes": ["blackcurrant", "tomato", "sparkling acidity", "tea-like finish"],
+        "brew_specs": [
+            ("Dose", "18 g"),
+            ("Ratio", "1:16.5"),
+            ("Temp", "96°C / 205°F"),
+            ("Grind", "Medium-fine"),
+            ("Method", "Kalita Wave, ~3:15 total"),
+        ],
         "pairing": None,
         "pairing_status": "tbd",
         "prev": "02-colombia",
@@ -45,10 +69,18 @@ courses = [
         "slug": "04-yuzu-cooler",
         "num": "04",
         "variant": "shop",
+        "origin_slug": "yuzu",
         "origin": "Specialty · Citrusy · Batched cold",
         "name": "Yuzu Jasmine Coconut Cooler",
         "role": "Echoes the Ethiopia's jasmine, bergamot, limeade energy",
         "notes": ["bright yuzu", "soft coconut", "jasmine lift"],
+        "brew_specs": [
+            ("Base", "Cold brew concentrate, 1:8"),
+            ("Steep", "14 hr, ambient"),
+            ("Grind", "Coarse"),
+            ("Build", "Yuzu + coconut cream, jasmine tincture"),
+            ("Serve", "Shaken over ice"),
+        ],
         "pairing": None,
         "pairing_status": "coming",
         "prev": "03-kenya",
@@ -58,10 +90,18 @@ courses = [
         "slug": "05-cherry-matcha",
         "num": "05",
         "variant": "journal",
+        "origin_slug": "cherry",
         "origin": "Specialty · Floral · Matcha",
         "name": "Cherry Jasmine Matcha",
         "role": "A refined, less obvious fruit expression",
         "notes": ["light matcha", "cherry depth", "jasmine aroma"],
+        "brew_specs": [
+            ("Matcha", "3 g ceremonial grade"),
+            ("Water", "60 ml at 75°C / 167°F"),
+            ("Whisk", "Chasen, M-pattern"),
+            ("Build", "Cherry reduction + jasmine milk"),
+            ("Serve", "Layered over ice"),
+        ],
         "pairing": None,
         "pairing_status": "coming",
         "prev": "04-yuzu-cooler",
@@ -71,10 +111,18 @@ courses = [
         "slug": "06-nitro-latte",
         "num": "06",
         "variant": "caramel",
+        "origin_slug": "nitro",
         "origin": "Specialty · Nitro",
         "name": "Nitro Vanilla Date Latte",
         "role": "A richer counterweight to the Kenya's sharp finish",
         "notes": ["silky nitro", "restrained date", "vanilla lift"],
+        "brew_specs": [
+            ("Dose", "18 g espresso"),
+            ("Ratio", "1:2 (36 g out)"),
+            ("Grind", "Fine"),
+            ("Build", "Date syrup + vanilla + whole milk"),
+            ("Charge", "N₂O, iSi Gourmet Whip"),
+        ],
         "pairing": None,
         "pairing_status": "coming",
         "prev": "05-cherry-matcha",
@@ -100,7 +148,7 @@ template = """<!DOCTYPE html>
 </head>
 <body>
 
-<main class="course course--{variant}">
+<main class="course course--{variant} course--origin course--{origin_slug}">
 
   <nav class="course__nav">
     <a href="../index.html" class="course__back">← All courses</a>
@@ -119,6 +167,13 @@ template = """<!DOCTYPE html>
       <div class="notes">
 {notes_html}
       </div>
+    </div>
+
+    <div class="course__section">
+      <div class="course__label">Brew specs</div>
+      <dl class="brew-specs">
+{brew_specs_html}
+      </dl>
     </div>
 
     <div class="course__section">
@@ -172,11 +227,14 @@ theme_map = {
     "shop": "#cbd0af",
 }
 
-out_dir = Path("/home/claude/omakase/courses")
+out_dir = Path(__file__).parent / "courses"
 out_dir.mkdir(parents=True, exist_ok=True)
 
 for c in courses:
     notes_html = "\n".join([f'        <span class="note">{n}</span>' for n in c["notes"]])
+    brew_specs_html = "\n".join(
+        [f'        <dt>{label}</dt><dd>{value}</dd>' for label, value in c["brew_specs"]]
+    )
     description = f'{c["role"]}. Tasting notes: {", ".join(c["notes"])}.'
 
     if c["pairing"]:
@@ -201,12 +259,14 @@ for c in courses:
     html = template.format(
         theme=theme_map[c["variant"]],
         variant=c["variant"],
+        origin_slug=c["origin_slug"],
         name=c["name"],
         num=c["num"],
         origin=c["origin"],
         role=c["role"],
         description=description,
         notes_html=notes_html,
+        brew_specs_html=brew_specs_html,
         pairing_html=pairing_html,
         prev_html=prev_html,
         next_html=next_html,
