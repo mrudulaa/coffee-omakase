@@ -130,6 +130,8 @@ courses = [
     },
 ]
 
+TOTAL_COURSES = 6
+
 template = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -154,6 +156,10 @@ template = """<!DOCTYPE html>
     <a href="../index.html" class="course__back">← All courses</a>
     <span class="course__counter">{num} of 06</span>
   </nav>
+
+  <ol class="course__dots" aria-label="Course {num} of 06">
+{dots_html}
+  </ol>
 
   <section class="course__hero">
 
@@ -237,6 +243,17 @@ for c in courses:
     )
     description = f'{c["role"]}. Tasting notes: {", ".join(c["notes"])}.'
 
+    dots_lines = []
+    position = int(c["num"])
+    for i in range(1, TOTAL_COURSES + 1):
+        if i < position:
+            dots_lines.append('    <li class="course__dots-item course__dots-item--past"></li>')
+        elif i == position:
+            dots_lines.append('    <li class="course__dots-item course__dots-item--current" aria-current="step"></li>')
+        else:
+            dots_lines.append('    <li class="course__dots-item"></li>')
+    dots_html = "\n".join(dots_lines)
+
     if c["pairing"]:
         pairing_html = f'<div class="pairing">{c["pairing"]}</div>'
     elif c.get("pairing_status") == "tbd":
@@ -266,6 +283,7 @@ for c in courses:
         role=c["role"],
         description=description,
         notes_html=notes_html,
+        dots_html=dots_html,
         brew_specs_html=brew_specs_html,
         pairing_html=pairing_html,
         prev_html=prev_html,

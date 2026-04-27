@@ -290,6 +290,35 @@ a { color: inherit; text-decoration: none; }
   color: var(--coral);
 }
 
+.course__dots {
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 14px 20px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+}
+
+.course__dots-item {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.25;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.course__dots-item--past {
+  opacity: 0.65;
+}
+
+.course__dots-item--current {
+  opacity: 1;
+  transform: scale(1.4);
+}
+
 .course__hero {
   flex: 1;
   display: flex;
