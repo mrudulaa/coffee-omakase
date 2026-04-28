@@ -175,12 +175,12 @@ a { color: inherit; text-decoration: none; }
 .tile--dessert  { background: var(--dessert);  color: var(--bg); }
 .tile--shop     { background: var(--shop);     color: var(--kale); }
 
-/* Country outline silhouettes on pour-over tiles */
-.tile--origin {
+/* Decorative motif silhouettes on tiles (countries for pour-overs, fruit/spice for specialty) */
+.tile--motif {
   overflow: hidden;
 }
 
-.tile--origin::after {
+.tile--motif::after {
   content: '';
   position: absolute;
   bottom: -5%;
@@ -204,12 +204,12 @@ a { color: inherit; text-decoration: none; }
 .tile--hazelnut::after  { background-image: url('assets/hazelnut.svg'); }
 .tile--canele::after    { background-image: url('assets/canele.svg'); }
 
-/* Country outline on course pages */
-.course--origin {
+/* Decorative motif silhouette on course pages */
+.course--motif {
   overflow: hidden;
 }
 
-.course--origin::after {
+.course--motif::after {
   content: '';
   position: absolute;
   bottom: 5%;
