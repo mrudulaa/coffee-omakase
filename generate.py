@@ -152,7 +152,7 @@ template = """<!DOCTYPE html>
 </head>
 <body>
 
-<main class="course course--{variant} course--origin course--{origin_slug}">
+<main class="course course--{variant} course--motif course--{origin_slug}">
 
   <nav class="course__nav">
     <a href="../index.html" class="course__back">← All courses</a>
